@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Django Assignment</h1>
+        <nav>
+            <a href="/">Home</a> | 
+            <a href="/about/">About</a>
+        </nav>
+    </header>
+    <hr>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 EVSU</p>
+    </footer>
+</body>
+</html>
