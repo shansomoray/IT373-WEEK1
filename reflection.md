@@ -1,0 +1,8 @@
+Environment Setup Reflection
+The overall environment setup was successful, but I encountered a few common hurdles that required troubleshooting, extending the initial setup time.
+
+My primary challenge was managing Python versions and virtual environment (venv) isolation. I have multiple Python versions installed globally, and during the initial phase, I mistakenly installed Django outside the virtual environment by forgetting the activation step (source venv/bin/activate). This resulted in the project relying on global packages, which is poor practice for dependency management. I solved this by immediately deleting the globally installed Django packages, ensuring the venv was properly activated, and then running pip install django again within the isolated environment.
+
+Another minor issue was encountered during the Git remote setup. Although I had cloned the repository, setting the final remote proved tricky due to an old SSH key conflict on my machine. I resolved this by generating a new key pair, updating my GitHub profile settings, and then successfully running the git remote add origin command.
+
+The checklist acted as an excellent guardrail, forcing me to confirm each critical component, especially the runserver functionality, which is the final confirmation that all dependencies (including the essential Microsoft Visual C++ Redistributable packages required by Python extensions) are correctly installed and configured.

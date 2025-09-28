@@ -1,0 +1,5 @@
+Python version: OK
+venv active: OK
+Django version: OK
+runserver working: OK
+Git remote set: OK
